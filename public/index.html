@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="page">
+        <div id="reponse"></div>
+        <div class="action">
+            <div id="footer-top2"></div>
+            <div id="footer-space"></div>
+            <div id="footer-top3">
+                <div id="footer-top">
+                    <div class="containerPositioning">
+                        <div class="ajouter">
+
+                            <button onclick="clickUser()"> AFFICHER UN POST</button>
+                            <input type="number" placeholder="AFFICHER UN POST" id="inputAddPost" min="0" max="100">
+                            <div id="resultPost"></div>
+                        </div>
+                        <div class="supprimer">
+                            <input type="number" placeholder="SUPPRIMER UN POST" id="inputDelettePost">
+                            <button onclick="delletePost()"> SUPPRIMER UN POST</button>
+                            <div id="delettePost"></div>
+                        </div>
+                    </div>
+                    <div class="container clearfix styleChangeElement">
+                        <div class="placementSecondaire placementLeft">
+                            <div class="one-fourth placementDivInterne">
+                                <div class="widget twitter-widget placementCenter">
+                                    <h3 class="classeStyleContenue colorTitle">Title</h3>
+                                    <input type="text" id="valueTitle">
+                                    <div class="tweet"></div>
+                                </div>
+                            </div>
+                            <div class="one-fourth placementDivInterne">
+                                <div class="widget twitter-widget placementCenter">
+                                    <h3 class="classeStyleContenue colorTitle"> body</h3>
+                                    <input type="text" id="valueBody">
+                                    <div class="tweet"></div>
+                                </div>
+                            </div>
+
+                            <div class="one-fourth placementDivInterne">
+                                <div class="widget twitter-widget placementCenter">
+                                    <h3 class="classeStyleContenue colorTitle">User id</h3>
+                                    <input type="text" id="valueUserId">
+                                    <div class="tweet"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="one-fourth column-last placementRight ">
+                            <div class="widget contact-info">
+                                <button type="submit" id="widthBoutonAjouter" onclick="addPostShowAjax()">AJOUTER UN
+                                    POST</button>
+                            </div>
+                            <div id="resultPostAdd"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div id="footer-bottom">
+                <div class="container clearfix">
+                    Footer AJAX EXO
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/mainLoadAjaxRequet.js"></script>
+    <script src="js/mainShowPost.js"></script>
+    <script src="js/MainAddPostAjax.js"></script>
+    <script src="js/mainDelletePost.js"></script>
+</body>
+
+</html>
