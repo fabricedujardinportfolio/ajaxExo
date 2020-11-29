@@ -21,6 +21,7 @@ body {}
 
 .placementPostId {
     float: right;
+    border: 2px solid black;
 }
 
 .ajouter {
